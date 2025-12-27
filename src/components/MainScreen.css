@@ -310,7 +310,7 @@
   flex-direction: column;
   gap: 12px;
   padding: 16px;
-  background-color: #17181f;
+  background-color: #17181f00;
   border: 1px solid #282d32;
 }
 
@@ -386,9 +386,9 @@
 }
 
 .tag {
-  background-color: #202831;
-  color: #565a5f;
-  border: 1px solid #282d32;
+  background-color: #242d38e6;
+  color: #73869d;
+  border: 1px solid #3b4249;
   padding: 4px 12px;
   font-size: 12px;
   font-weight: 500;
@@ -415,7 +415,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 12px 16px;
-  background-color: #17181f;
+  background-color: #17181f00;
   border: 1px solid #282d32;
   border-top: none;
 }
