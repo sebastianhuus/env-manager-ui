@@ -39,7 +39,7 @@ export function LoginScreen() {
 
       {/* Main Content */}
       <main className="main-content">
-        <Starfield starCount={100} minOpacity={0.3} maxOpacity={0.95} />
+        <Starfield starCount={100} minOpacity={0.3} maxOpacity={0.8} />
         <div className="content-container">
           <div className="content-frame">
             {/* Header */}
