@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Input } from "./Input";
+import { Starfield } from "./Starfield";
 import "./LoginScreen.css";
 
 export function LoginScreen() {
@@ -38,9 +39,7 @@ export function LoginScreen() {
 
       {/* Main Content */}
       <main className="main-content">
-        <div className="starfield-background">
-          {/* Starfield will be rendered here via CSS */}
-        </div>
+        <Starfield starCount={100} minOpacity={0.3} maxOpacity={0.95} />
         <div className="content-container">
           <div className="content-frame">
             {/* Header */}
