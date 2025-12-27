@@ -31,7 +31,7 @@ export function LoginScreen() {
                 <path d="M7 11V7a5 5 0 0 1 10 0v4" />
               </svg>
             </div>
-            <span className="app-name">Zapo</span>
+            <span className="app-name">ZAPO</span>
           </div>
         </div>
       </nav>
