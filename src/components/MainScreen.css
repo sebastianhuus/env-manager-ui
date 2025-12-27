@@ -37,7 +37,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: #7a7e83;
   cursor: pointer;
   transition: opacity 0.2s;
 }
@@ -62,7 +62,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #ffffff;
+  color: #7a7e83;
   font-size: 14px;
 }
 
@@ -75,7 +75,7 @@
 .navbar-icon-button {
   background: none;
   border: none;
-  color: #ffffff;
+  color: #7a7e83;
   cursor: pointer;
   padding: 8px;
   display: flex;
