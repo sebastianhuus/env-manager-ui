@@ -110,6 +110,8 @@
 /* Vertical Divider */
 .vertical-divider {
   background-color: rgba(100, 103, 111, 0.3);
+  height: 100%;
+  align-self: stretch;
 }
 
 .create-box-button {
