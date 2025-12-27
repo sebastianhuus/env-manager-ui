@@ -162,20 +162,20 @@ export function MainScreen() {
             <h2 className="section-header">STATISTICS</h2>
             <div className="statistics-grid">
               <div className="stat-box">
-                <span className="stat-label">TOTAL BOXES</span>
                 <span className="stat-value stat-value-white">1</span>
+                <span className="stat-label">TOTAL BOXES</span>
               </div>
               <div className="stat-box">
-                <span className="stat-label">DEV BOXES</span>
                 <span className="stat-value stat-value-green">1</span>
+                <span className="stat-label">DEV BOXES</span>
               </div>
               <div className="stat-box">
-                <span className="stat-label">SECURE BOXES</span>
                 <span className="stat-value stat-value-yellow">0</span>
+                <span className="stat-label">SECURE BOXES</span>
               </div>
               <div className="stat-box">
-                <span className="stat-label">TOTAL SECRETS</span>
                 <span className="stat-value stat-value-blue">1</span>
+                <span className="stat-label">TOTAL SECRETS</span>
               </div>
             </div>
           </div>
