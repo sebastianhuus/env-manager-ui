@@ -1,0 +1,154 @@
+.login-screen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0e1218;
+  overflow: hidden;
+}
+
+/* Navigation Bar */
+.navbar {
+  height: 60px;
+  border-bottom: 1px solid rgba(100, 103, 111, 0.3);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lock-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0e1218;
+}
+
+.app-name {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Content Container */
+.content-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 440px;
+  padding: 0 24px;
+}
+
+.content-frame {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Header Frame */
+.header-frame {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header-title {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.header-subtitle {
+  color: #7a7e83;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Interaction Frame */
+.interaction-frame {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.unlock-button {
+  width: 100%;
+  background-color: #ffffff;
+  color: #0e1218;
+  border: none;
+  border-radius: 0;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.unlock-button:hover {
+  opacity: 0.9;
+}
+
+.unlock-button:active {
+  opacity: 0.8;
+}
+
+.forgot-password {
+  color: #7a7e83;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.forgot-password:hover {
+  color: #ffffff;
+}
+
+/* Footer Frame */
+.footer-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  color: #7a7e83;
+  font-size: 13px;
+}
+
+.footer-dot {
+  color: #7a7e83;
+  font-size: 13px;
+  line-height: 1;
+}
