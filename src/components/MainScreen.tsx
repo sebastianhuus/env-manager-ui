@@ -148,7 +148,7 @@ export function MainScreen() {
                   </div>
                   <div className="box-header-right">
                     <button className="play-button" aria-label="Run box">
-                      <Play size={14} fill="currentColor" />
+                      <Play size={18} fill="#32c260" strokeWidth={0} />
                     </button>
                     <button className="menu-button" aria-label="More options">
                       <MoreVertical size={18} />
