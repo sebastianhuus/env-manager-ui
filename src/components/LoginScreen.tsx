@@ -3,12 +3,16 @@ import { Input } from "./Input";
 import { Starfield } from "./Starfield";
 import "./LoginScreen.css";
 
-export function LoginScreen() {
+interface LoginScreenProps {
+  onUnlock: () => void;
+}
+
+export function LoginScreen({ onUnlock }: LoginScreenProps) {
   const [password, setPassword] = useState("");
 
   const handleUnlock = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Unlocking vault with password:", password);
+    onUnlock();
   };
 
   return (

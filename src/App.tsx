@@ -1,8 +1,16 @@
+import { useState } from "react";
 import { LoginScreen } from "./components/LoginScreen";
+import { MainScreen } from "./components/MainScreen";
 import "./App.css";
 
 function App() {
-  return <LoginScreen />;
+  const [isUnlocked, setIsUnlocked] = useState(false);
+
+  return isUnlocked ? (
+    <MainScreen />
+  ) : (
+    <LoginScreen onUnlock={() => setIsUnlocked(true)} />
+  );
 }
 
 export default App;
