@@ -189,6 +189,9 @@ export function MainScreen() {
           </div>
         </aside>
 
+        {/* Vertical Divider */}
+        <div className="vertical-divider" />
+
         {/* Right Column - Boxes */}
         <div className="boxes-container">
           {/* Filter Row */}
@@ -219,6 +222,9 @@ export function MainScreen() {
               />
             </div>
           </div>
+
+          {/* Horizontal Divider */}
+          <div className="horizontal-divider" />
 
           {/* Box Cards */}
           <div className="boxes-list">
