@@ -167,7 +167,7 @@
 
 .stat-box {
   background-color: #17181f;
-  border: 1px solid #191d22;
+  border: 1px solid #282d32;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -311,7 +311,7 @@
   gap: 12px;
   padding: 16px;
   background-color: #17181f;
-  border: 1px solid #191d22;
+  border: 1px solid #282d32;
 }
 
 .box-header {
@@ -388,7 +388,7 @@
 .tag {
   background-color: #202831;
   color: #565a5f;
-  border: 1px solid #191d22;
+  border: 1px solid #282d32;
   padding: 4px 12px;
   font-size: 12px;
   font-weight: 500;
@@ -416,7 +416,7 @@
   justify-content: space-between;
   padding: 12px 16px;
   background-color: #17181f;
-  border: 1px solid #191d22;
+  border: 1px solid #282d32;
   border-top: none;
 }
 
