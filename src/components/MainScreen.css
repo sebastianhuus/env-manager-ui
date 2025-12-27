@@ -93,7 +93,9 @@
   flex: 1;
   display: grid;
   grid-template-columns: 300px 1px 1fr;
+  grid-template-rows: 1fr;
   overflow: hidden;
+  align-items: start;
 }
 
 /* Sidebar */
