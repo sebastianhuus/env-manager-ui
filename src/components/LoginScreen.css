@@ -1,0 +1,244 @@
+.login-screen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0e1218;
+  overflow: hidden;
+}
+
+/* Navigation Bar */
+.navbar {
+  height: 60px;
+  border-bottom: 1px solid rgba(100, 103, 111, 0.3);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lock-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0e1218;
+}
+
+.app-name {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Starfield Background */
+.starfield-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.starfield-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+      1px 1px at 20% 30%,
+      rgba(255, 255, 255, 0.3) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 60% 70%,
+      rgba(255, 255, 255, 0.2) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 50% 50%,
+      rgba(255, 255, 255, 0.4) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 80% 10%,
+      rgba(255, 255, 255, 0.25) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 90% 60%,
+      rgba(255, 255, 255, 0.3) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 33% 80%,
+      rgba(255, 255, 255, 0.2) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 15% 60%,
+      rgba(255, 255, 255, 0.35) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      2px 2px at 40% 20%,
+      rgba(255, 255, 255, 0.15) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 70% 40%,
+      rgba(255, 255, 255, 0.3) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 25% 10%,
+      rgba(255, 255, 255, 0.25) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 85% 85%,
+      rgba(255, 255, 255, 0.2) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      2px 2px at 45% 90%,
+      rgba(255, 255, 255, 0.18) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 10% 25%,
+      rgba(255, 255, 255, 0.28) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 95% 45%,
+      rgba(255, 255, 255, 0.22) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 55% 5%,
+      rgba(255, 255, 255, 0.32) 0%,
+      transparent 100%
+    );
+  background-size: 200% 200%;
+  background-position: 0% 0%;
+}
+
+/* Content Container */
+.content-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 440px;
+  padding: 0 24px;
+}
+
+.content-frame {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Header Frame */
+.header-frame {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header-title {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.header-subtitle {
+  color: #7a7e83;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Interaction Frame */
+.interaction-frame {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.unlock-button {
+  width: 100%;
+  background-color: #ffffff;
+  color: #0e1218;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.unlock-button:hover {
+  opacity: 0.9;
+}
+
+.unlock-button:active {
+  opacity: 0.8;
+}
+
+.forgot-password {
+  color: #7a7e83;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.forgot-password:hover {
+  color: #ffffff;
+}
+
+/* Footer Frame */
+.footer-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  color: #7a7e83;
+  font-size: 13px;
+}
+
+.footer-dot {
+  color: #7a7e83;
+  font-size: 13px;
+  line-height: 1;
+}
