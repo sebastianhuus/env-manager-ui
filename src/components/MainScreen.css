@@ -89,7 +89,7 @@
 }
 
 /* Main Content */
-.main-content {
+.main-screen .main-content {
   flex: 1;
   display: grid;
   grid-template-columns: 300px 1px 1fr;
