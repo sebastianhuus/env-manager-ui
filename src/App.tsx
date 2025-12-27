@@ -7,7 +7,7 @@ function App() {
   const [isUnlocked, setIsUnlocked] = useState(false);
 
   return isUnlocked ? (
-    <MainScreen />
+    <MainScreen onLogout={() => setIsUnlocked(false)} />
   ) : (
     <LoginScreen onUnlock={() => setIsUnlocked(true)} />
   );

@@ -14,7 +14,11 @@ import {
 } from "lucide-react";
 import "./MainScreen.css";
 
-export function MainScreen() {
+interface MainScreenProps {
+  onLogout: () => void;
+}
+
+export function MainScreen({ onLogout }: MainScreenProps) {
   const [currentTime, setCurrentTime] = useState(new Date());
 
   useEffect(() => {
@@ -37,7 +41,7 @@ export function MainScreen() {
       <nav className="navbar">
         <div className="navbar-content">
           <div className="navbar-logo">
-            <div className="close-icon">
+            <div className="close-icon" onClick={onLogout}>
               <X size={20} />
             </div>
             <span className="app-name">ZAPO</span>
@@ -63,7 +67,11 @@ export function MainScreen() {
               <Settings size={18} />
             </button>
 
-            <button className="navbar-icon-button" aria-label="Logout">
+            <button
+              className="navbar-icon-button"
+              aria-label="Logout"
+              onClick={onLogout}
+            >
               <LogOut size={18} />
             </button>
           </div>
